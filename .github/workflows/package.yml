@@ -1,0 +1,33 @@
+name: Build Distribution Archives
+
+on:
+  push:
+    tags:
+      - '*'   # Triggers on any tag push
+  workflow_dispatch:
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create ZIP archive
+        run: |
+          zip -r markor-modules-${{ github.ref_name }}.zip .assets .app/fonts .app/modules
+
+      - name: Create TAR archive
+        run: |
+          tar -czvf markor-modules-${{ github.ref_name }}.tar.gz .assets .app/fonts .app/modules
+
+      - name: Upload ZIP archive as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: markor-modules-zip
+          path: markor-modules-${{ github.ref_name }}.zip
+
+      - name: Upload TAR archive as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: markor-modules-tar
+          path: markor-modules-${{ github.ref_name }}.tar.gz
