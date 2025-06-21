@@ -1,0 +1,99 @@
+:root {
+  --vim-status: #4e4e4e;
+  --vim-background: #ffffd7;
+  --vim-highlight: #d7d7af30;
+  --vim-block: #d7d7af60;
+  --body-background: #fafad7;
+  --no-highlight: #00000000;
+}
+
+/* Override PrismJS settings */
+.line-numbers span:before {
+  background: var(--vim-highlight) !important;
+}
+
+.line-highlight {
+  background: linear-gradient(to right,
+    var(--no-highlight) 0px,
+    var(--no-highlight) 38px,
+    var(--vim-block) 38px,
+    var(--vim-block) 100%
+  );
+}
+
+code[class*=language-], pre[class*=language-] {
+  font-family: "Reddit Mono" !important;
+}
+
+body, html {
+  background: var(--body-background) !important;
+  text-align: justify;
+  font-family: "Fuzzy Bubbles";
+}
+
+pre {
+  min-width: 90% !important;
+  max-width: fit-content !important;
+  background: var(--vim-background) !important;
+  font-size: 90% !important;
+}
+
+blockquote {
+  min-width: 95% !important;
+  text-align: left;
+  color: #171717;
+  font-size: 90% !important;
+}
+
+cite, var, q {
+  display: none;
+}
+
+/* Override Admonitions settings */
+.adm-block {
+  align-content: center !important;/
+  width: 80%            !important;
+}
+
+div.adm-body > p, .adm-body {
+  padding: 5px !important;
+  margin: 5px  !important;
+}
+
+/* Admonitions footer settings */
+.footer, .adm-note {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: auto;
+  font-size: 95%;
+  font-family: casual, cursive !important;
+  vertical-align: middle;
+}
+
+/* Admonitions cover splash settings */
+.cover, .adm-tip {
+  border: none         !important;
+  box-shadow: none     !important;
+  display: block       !important;
+  width: 80%           !important;
+  font-family: cursive !important;
+  font-size: 2.5em     !important;
+  margin: 8%           !important;
+  outline-color: red   !important;
+  outline-style: inset !important;
+  outline-width: 10px  !important;
+  text-align: center   !important;
+
+  background-image: linear-gradient(to bottom right, yellow, orange) !important;
+  transform: skew(0.312rad) rotate(-2deg) !important;
+}
+
+/* Admonitions SMILES settings */
+.molecule, .adm-danger {
+  width: 80%;
+  height: auto;
+  font-size: 95%;
+  font-family: casual, cursive !important;
+  vertical-align: middle;
+}
