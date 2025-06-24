@@ -6,7 +6,7 @@
 <link href="../.assets/prism-core.css" rel="stylesheet" />
 
 <script src="../.app/modules/Smiles/smiles-drawer.min.js"></script>
-<script src="../.app/modules/Smiles/smiles-render-adm.js"></script>
+<script src="../.app/modules/Smiles/smiles-adm-canvas.js"></script>
 
 <!-- Custom CSS and JavaScript -->
 <link href="../.assets/inject-head.css" rel="stylesheet" />
