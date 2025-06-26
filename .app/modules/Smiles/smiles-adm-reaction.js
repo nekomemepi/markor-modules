@@ -27,11 +27,11 @@ function SmilesInAdmonitions() {
     svgContainer.style.display = 'block'
 
     admonition.appendChild(svgContainer)
-
-    try {
-      SmiDrawer.alert()
-    } catch (error) {
-      window.alert(`Failed to parse SMILES "${smiles}": ` + error)
-    }
   })
+}
+
+try {
+  SmiDrawer.apply()
+} catch (error) {
+  window.alert(`Failed to parse SMILES "${smiles}": ` + error)
 }
