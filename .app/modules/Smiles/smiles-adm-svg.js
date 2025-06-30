@@ -21,8 +21,10 @@ function SmilesInAdmonitions() {
     // Create SVG container
     const svgContainer = document.createElement("div")
     svgContainer.id = svgId
+    svgContainer.width = width
+    svgContainer.height = height
     svgContainer.setAttribute("data-smiles", smiles)
-    svgContainer.setAttribute("data-smiles-options", '{"width": 600, "height": 300 }')
+    svgContainer.setAttribute("data-smiles-options", '{"width": 500, "height": 250 }')
     svgContainer.style.overflowX = "auto"
     svgContainer.style.display = "block"
 
