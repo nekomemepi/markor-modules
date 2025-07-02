@@ -1,0 +1,2 @@
+I use Markor, which has katex, mhchem, and mermaidjs built in. Can you write a detailed introduction to organic chemistry that highlights the key fundamental points, showcasing the use of mhchem for chemical formulae, mermaidjs for graphs, and katex for equations. Present your answer as a single block that can be copied to the clipboard.
+
