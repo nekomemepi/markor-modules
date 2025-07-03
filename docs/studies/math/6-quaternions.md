@@ -1,4 +1,4 @@
-# 📘 Introduction to Quaternions
+## 📘 Introduction to Quaternions
 
 Quaternions are a number system that extends complex numbers,
 introduced by William Rowan Hamilton in 1843. They are widely used in
@@ -7,7 +7,7 @@ for representing rotations and orientations.
 
 ---
 
-## 🧮 Mathematical Foundation
+### 🧮 Mathematical Foundation
 
 A quaternion is typically written as:
 
@@ -36,24 +36,24 @@ $$
 
 ---
 
-## 🔄 Quaternion Operations
+### 🔄 Quaternion Operations
 
-### Conjugate
+#### Conjugate
 $$
 \bar{q} = a - bi - cj - dk
 $$
 
-### Norm
+#### Norm
 $$
 \|q\| = \sqrt{a^2 + b^2 + c^2 + d^2}
 $$
 
-### Inverse
+#### Inverse
 $$
 q^{-1} = \frac{\bar{q}}{\|q\|^2}
 $$
 
-### Multiplication (non-commutative)
+#### Multiplication (non-commutative)
 
 Quaternion multiplication combines rotation and scaling, and is **not
 commutative**:
@@ -64,7 +64,7 @@ $$
 
 ---
 
-## 🧭 Quaternions and Rotations
+### 🧭 Quaternions and Rotations
 
 A **unit quaternion** (where $ \|q\| = 1 $) can represent a 3D
 rotation. Given a vector $ \vec{v} $ and a unit quaternion $ q $, the
@@ -78,7 +78,7 @@ Where $ \vec{v} $ is treated as a quaternion with real part 0: $ 0 + xi + yj + z
 
 ---
 
-## 📊 Quaternion Rotation Flow
+### 📊 Quaternion Rotation Flow
 
 ```mermaid
 flowchart TD
@@ -90,7 +90,7 @@ flowchart TD
 
 ---
 
-## 🚀 Modern Applications
+### 🚀 Modern Applications
 
 - **Computer Graphics**: Smooth interpolation of rotations (slerp), avoiding gimbal lock.
 - **Robotics**: Orientation control of robotic arms and drones.
@@ -100,7 +100,7 @@ flowchart TD
 
 ---
 
-## 🧠 Why Use Quaternions?
+### 🧠 Why Use Quaternions?
 
 - Avoid **gimbal lock** (a problem with Euler angles)
 - More compact and efficient than rotation matrices

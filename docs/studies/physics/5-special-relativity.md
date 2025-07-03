@@ -1,5 +1,4 @@
-````markdown
-# An Introduction to Special Relativity 🌌
+## An Introduction to Special Relativity 🌌
 
 Special relativity, a cornerstone of modern physics, was introduced by
 Albert Einstein in 1905. It fundamentally changed our understanding of
@@ -8,17 +7,17 @@ postulates.
 
 ---
 
-## The Two Postulates of Special Relativity
+### The Two Postulates of Special Relativity
 
 At the heart of special relativity lie two fundamental principles:
 
 1.  **The Principle of Relativity**: The laws of physics are the same
-for all observers in uniform motion (i.e., not accelerating). This
+    for all observers in uniform motion (i.e., not accelerating). This
 means that the outcome of any physical experiment will be the same,
 regardless of the constant velocity of the laboratory.
 
 2.  **The Principle of the Constancy of the Speed of Light**: The
-speed of light in a vacuum, denoted by $c$, is the same for all
+    speed of light in a vacuum, denoted by $c$, is the same for all
 observers, regardless of the motion of the light source or the
 observer. This is a radical departure from classical intuition. For
 instance, if you're on a train moving at 100 km/h and throw a ball
@@ -29,7 +28,7 @@ speed of light to be exactly $c$ (approximately 299,792,458 m/s).
 
 ---
 
-## The Lorentz Transformations
+### The Lorentz Transformations
 
 To reconcile the two postulates, we must modify the classical Galilean
 transformations. The correct transformations that preserve the speed
@@ -63,7 +62,7 @@ graph TD
     B --> E{v << c};
     E --> F[gamma is approximately 1];
 
-    subgraph Lorentz Factor (γ)
+    subgraph Lorentz Factor γ
         direction LR
         G(v/c) --> H(γ);
     end
@@ -78,12 +77,12 @@ graph TD
 
 -----
 
-## Consequences of Special Relativity
+### Consequences of Special Relativity
 
 The Lorentz transformations lead to some truly mind-bending
 consequences for our understanding of space and time.
 
-### Time Dilation ⏳
+#### Time Dilation ⏳
 
 An observer will measure a moving clock to be ticking slower than a
 clock that is at rest in their own frame of reference. This effect,
@@ -93,8 +92,8 @@ $$
 \Delta t' = \gamma \Delta t
 $$
 
-Where $\\Delta t'$ is the time interval measured by the moving
-observer, and $\\Delta t$ is the proper time interval (measured in the
+Where $\Delta t'$ is the time interval measured by the moving
+observer, and $\Delta t$ is the proper time interval (measured in the
 rest frame of the clock). This means that a journey that feels like
 one year to an astronaut traveling at 99.5% of the speed of light
 would be observed as taking ten years from Earth.
@@ -104,20 +103,20 @@ in the following graph:
 
 ```mermaid
 xychart-beta
-title "Time Dilation"
-x-axis "Velocity (as a fraction of c)" [0, 0.2, 0.4, 0.6, 0.8, 0.9, 0.95, 0.99]
-y-axis "Time Dilation Factor (γ)" [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-line [1.0, 1.02, 1.09, 1.25, 1.67, 2.29, 3.2, 7.09]
+    title "Time Dilation"
+    x-axis "Velocity (as a fraction of c)" [0, 0.2, 0.4, 0.6, 0.8, 0.9, 0.95, 0.99]
+    y-axis "Time Dilation Factor (γ)" 1 --> 10
+    line [1.0, 1.02, 1.09, 1.25, 1.67, 2.29, 3.2, 7.09]
 ```
 
-### Length Contraction 📏
+#### Length Contraction 📏
 
 The length of an object as measured by an observer who is moving
 relative to the object is shorter than the length measured by an
 observer at rest with respect to the object. This is known as **length
 contraction**. The formula for length contraction is:
 
-$$L = \\frac{L\_0}{\\gamma}
+$$L = \frac{L\_0}{\gamma}
 $$
 
 Where $L$ is the observed length and $L\_0$ is the proper length (the
@@ -130,11 +129,11 @@ on board would measure it.
 
 ```mermaid
 graph TD
-    subgraph Rest Frame (Observer on Spaceship)
+    subgraph Rest Frame Observer on Spaceship
         A[Spaceship Length = L₀]
     end
 
-    subgraph Moving Frame (Observer on Space Station)
+    subgraph Moving Frame Observer on Space Station
         B[Spaceship moving at velocity v] --> C{Spaceship appears shorter};
         C --> D[Measured Length L = L₀/γ];
     end
@@ -145,7 +144,7 @@ graph TD
     style D fill:#BB8FCE,stroke:#6C3483,stroke-width:2px
 ```
 
-### Relativity of Simultaneity
+#### Relativity of Simultaneity
 
 Two events that are simultaneous in one frame of reference may not be
 simultaneous in another frame of reference that is in motion relative
@@ -183,7 +182,7 @@ world line of a moving observer would be tilted.*
 
 -----
 
-## Mass-Energy Equivalence ⚛️
+### Mass-Energy Equivalence ⚛️
 
 Perhaps the most famous equation in all of physics comes from special
 relativity:
@@ -201,3 +200,8 @@ nuclear power and nuclear weapons. It also explains why particles in
 accelerators become more "massive" (i.e., harder to accelerate) as
 they approach the speed of light – the energy being pumped into them
 is being converted into mass.
+
+-----
+
+> _Note: Scaling the mermaid.js diagrams is left as an exercise for the
+> reader_

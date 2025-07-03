@@ -1,10 +1,13 @@
-# Chapter: Chromatography in Organic Chemistry
+## Chapter: Chromatography in Organic Chemistry
 
-Chromatography is a powerful separation technique used to isolate, identify, and purify components in a mixture. It works by distributing compounds between a **stationary phase** and a **mobile phase**, based on differences in polarity, size, or affinity.
+Chromatography is a powerful separation technique used to isolate,
+identify, and purify components in a mixture. It works by distributing
+compounds between a **stationary phase** and a **mobile phase**, based
+on differences in polarity, size, or affinity.
 
 ---
 
-## 🧪 Basic Principle
+### 🧪 Basic Principle
 
 - **Stationary Phase**: The phase that stays fixed (e.g., silica gel, paper)
 - **Mobile Phase**: The phase that moves (e.g., solvent, gas)
@@ -13,9 +16,9 @@ Compounds move at different rates depending on their interaction with each phase
 
 ---
 
-## 📊 Types of Chromatography
+### 📊 Types of Chromatography
 
-### 1. **Thin Layer Chromatography (TLC)**
+#### 1. **Thin Layer Chromatography (TLC)**
 
 - Quick, qualitative method
 - Stationary phase: silica or alumina on a plate
@@ -34,7 +37,7 @@ $$
 
 ---
 
-### 2. **Column Chromatography**
+#### 2. **Column Chromatography**
 
 - Used for purification
 - Column packed with silica/alumina
@@ -52,10 +55,10 @@ graph TD
 
 ---
 
-### 3. **Gas Chromatography (GC)**
+#### 3. **Gas Chromatography (GC)**
 
 - Used for volatile compounds
-- Mobile phase: inert gas (e.g., \(\ce{He}\), \(\ce{N2}\))
+- Mobile phase: inert gas (e.g., $\ce{He}$, $\ce{N2}$)
 - Stationary phase: liquid on solid support in a capillary column
 
 **Output**: Chromatogram with retention times
@@ -67,7 +70,7 @@ graph TD
 
 ---
 
-### 4. **High-Performance Liquid Chromatography (HPLC)**
+#### 4. **High-Performance Liquid Chromatography (HPLC)**
 
 - High-resolution, quantitative
 - Mobile phase: liquid under pressure
@@ -81,7 +84,7 @@ graph TD
 
 ---
 
-## 🧠 Summary
+### 🧠 Summary
 
 Chromatography is essential for:
 

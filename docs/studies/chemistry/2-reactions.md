@@ -1,10 +1,14 @@
-# Chapter: Reaction Mechanisms
+## Chapter: Reaction Mechanisms
 
-Understanding **reaction mechanisms** is essential in organic chemistry. A mechanism describes the step-by-step sequence of elementary reactions by which overall chemical change occurs. It helps explain how and why reactions happen, including the movement of electrons, formation of intermediates, and transition states.
+Understanding **reaction mechanisms** is essential in organic
+chemistry. A mechanism describes the step-by-step sequence of
+elementary reactions by which overall chemical change occurs. It helps
+explain how and why reactions happen, including the movement of
+electrons, formation of intermediates, and transition states.
 
 ---
 
-## 🔄 What is a Reaction Mechanism?
+### 🔄 What is a Reaction Mechanism?
 
 A **reaction mechanism** outlines:
 
@@ -16,9 +20,9 @@ A **reaction mechanism** outlines:
 
 ---
 
-## 🧪 Example: SN1 vs SN2 Mechanisms
+### 🧪 Example: SN1 vs SN2 Mechanisms
 
-### SN2 (Bimolecular Nucleophilic Substitution)
+#### SN2 (Bimolecular Nucleophilic Substitution)
 
 - One-step mechanism
 - Backside attack by nucleophile
@@ -26,9 +30,7 @@ A **reaction mechanism** outlines:
 
 **SMILES Reaction:**
 
-```
-[CH3Br].[OH-]>>[CH3OH].[Br-]
-```
+!!! danger "Molecule : [CH3Br].[OH-]>>[CH3OH].[Br-]"
 
 **Mechanism:**
 
@@ -42,7 +44,7 @@ $$
 
 ---
 
-### SN1 (Unimolecular Nucleophilic Substitution)
+#### SN1 (Unimolecular Nucleophilic Substitution)
 
 - Two-step mechanism
 - Formation of carbocation intermediate
@@ -50,9 +52,7 @@ $$
 
 **SMILES Reaction:**
 
-```
-[CH3C(CH3)2Br].[H2O]>>[CH3C(CH3)2OH].[HBr]
-```
+!!! danger "Molecule ? [CH3C(CH3)2Br].[H2O]>>[CH3C(CH3)2OH].[HBr]"
 
 **Mechanism:**
 
@@ -65,17 +65,17 @@ $$
 
 ---
 
-## ⚡ Electrophiles and Nucleophiles
+### ⚡ Electrophiles and Nucleophiles
 
 - **Nucleophile**: Electron-rich species that donates electrons  
-  Examples: \(\ce{OH^-}\), \(\ce{NH3}\), \(\ce{CN^-}\)
+  Examples: $\ce{OH^-}$, $\ce{NH3}$, $\ce{CN^-}$
 
 - **Electrophile**: Electron-deficient species that accepts electrons  
-  Examples: \(\ce{C^+}\), \(\ce{Br2}\), \(\ce{H+}\)
+  Examples: $\ce{C^+}$, $\ce{Br2}$, $\ce{H+}$
 
 ---
 
-## 🔁 Common Mechanistic Types
+### 🔁 Common Mechanistic Types
 
 | Mechanism Type | Description | Example |
 |----------------|-------------|---------|
@@ -86,7 +86,7 @@ $$
 
 ---
 
-## 🧬 Reaction Coordinate Diagram
+### 🧬 Reaction Coordinate Diagram
 
 ```mermaid
 graph LR
@@ -102,9 +102,10 @@ graph LR
 
 ---
 
-## 🧠 Summary
+### 🧠 Summary
 
-Reaction mechanisms provide a molecular-level understanding of how reactions proceed. Mastery of mechanisms allows chemists to:
+Reaction mechanisms provide a molecular-level understanding of how
+reactions proceed. Mastery of mechanisms allows chemists to:
 
 - Predict products
 - Design synthetic routes
