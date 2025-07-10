@@ -1,0 +1,52 @@
+{
+    width: 500,
+    height: 500,
+    bondThickness: 0.6,
+    bondLength: 15,
+    shortBondLength: 0.85,
+    bondSpacing: 0.18 * 15,
+    atomVisualization: 'default',
+    isomeric: true,
+    debug: false,
+    terminalCarbons: false,
+    explicitHydrogens: false,
+    overlapSensitivity: 0.42,
+    overlapResolutionIterations: 1,
+    compactDrawing: true,
+    fontSizeLarge: 5,
+    fontSizeSmall: 3,
+    padding: 20.0,
+    experimental: false,
+    themes: {
+        dark: {
+            C: '#fff',
+            O: '#e74c3c',
+            N: '#3498db',
+            F: '#27ae60',
+            CL: '#16a085',
+            BR: '#d35400',
+            I: '#8e44ad',
+            P: '#d35400',
+            S: '#f1c40f',
+            B: '#e67e22',
+            SI: '#e67e22',
+            H: '#fff',
+            BACKGROUND: '#141414'
+        },
+        light: {
+            C: '#222',
+            O: '#e74c3c',
+            N: '#3498db',
+            F: '#27ae60',
+            CL: '#16a085',
+            BR: '#d35400',
+            I: '#8e44ad',
+            P: '#d35400',
+            S: '#f1c40f',
+            B: '#e67e22',
+            SI: '#e67e22',
+            H: '#222',
+            BACKGROUND: '#fff'
+        }
+    }
+};
