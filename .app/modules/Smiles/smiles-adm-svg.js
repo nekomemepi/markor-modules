@@ -18,19 +18,25 @@ function SmilesInAdmonitions() {
     const align = match[4] || "center"
     const svgId = `smiles-svg-${index}`
 
-    // Create SVG container
-    const svgContainer = document.createElement("div")
+    // Create DIV/SVG containers
+    const divContainer = document.createElement("div")
+    const svgContainer = document.createElementNS("svg")
+
     svgContainer.id = svgId
-    svgContainer.width = width
-    svgContainer.height = height
     svgContainer.setAttribute("data-smiles", smiles)
     svgContainer.setAttribute("data-smiles-options", '{"width": 500, "height": 250 }')
     svgContainer.style.overflowX = "auto"
     svgContainer.style.display = "block"
 
-    admonition.appendChild(svgContainer)
+    divContainer.appendChild(svgContainer)
+    admonition.appendChild(divContainer)
   })
 
+  const svgs = document.querySelectorAll("svg[data-smiles]")
+  svgs.forEach((svg) => {
+    window.alert(svg.getAttribute("data-smiles"))
+  })
+      
   try {
     SmiDrawer.apply()
   } catch (error) {
