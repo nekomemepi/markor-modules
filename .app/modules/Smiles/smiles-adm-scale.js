@@ -12,34 +12,9 @@ function SmilesInAdmonitions() {
     const purpose = match[0].trim()
     if (purpose != "Molecule") return
 
-    /* TODO:
-        'data-smiles-product-weights'
-        'data-smiles-reactant-weights'
-        'data-smiles-reaction-options'
-        'data-smiles-reagent-weights'
-        'data-smiles-theme'
-        'data-smiles-weights'
-    */
-
-    // Fetch custom options
-    fetch('./smiles-opts-custom.json')
-      .then(response => {
-        if (!response.ok) {
-          console.info('no smiles-opts-custom.json')
-          return {}
-        }
-        return response.json()
-      })
-      .then(jsonData => {
-        const smilesOptions = jsonData
-      })
-      .catch(error => {
-        console.error('There was a problem with the fetch operation:', error)
-      })
-
     // Parse the Molecule options
     const smiles = match[1].trim()
-    const parseInt(match[2]) && (smilesOptions.width = match[2].trim)
+    const svgWidth = 600
     const svgId = `smiles-svg-${index}`
 
     // Create DIV/SVG containers
@@ -60,20 +35,13 @@ function SmilesInAdmonitions() {
     window.alert(`Failed to parse SMILES "${smiles}": ` + error)
   }
 
-  // for some reason data-smiles-options works for img but not svg
-  const svgs = document.querySelectorAll("svg[data-smiles]")
-  svgs.forEach((svg) => {
-    window.alert(svg.getAttribute("data-smiles"))
-  })
+  // Scale svg elements with the id 'data-smiles'
+  const svgs = document.querySelectorAll('svg[data-smiles]')
+  svgs.forEach(svg => {
+    const {x, y, width, height} = svg.viewBox.baseVal
+    const scale = 600 / width
 
-  // Select all svg elements with the id 'data-smiles'
-  const htmlElements = document.querySelectorAll('#data-smiles')
-  htmlElements.forEach(element => {
-      const width = parseFloat(element.getAttribute('width'))
-      if (!isNaN(width)) {
-          element.style.transform = `scale(${width})`
-          element.style.transformOrigin = 'top left'
-      }
+    svg.setAttribute('transform',`scale(${scale})`);
   })
 }
 
