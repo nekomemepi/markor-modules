@@ -50,15 +50,17 @@ function SmilesInAdmonitions() {
     window.alert(`Failed to parse SMILES "${smiles}": ` + error)
   }
 
-  // Scale svg elements with the id "data-smiles"
+  // Scale svg elements with the attribute "data-smiles"
   document.querySelectorAll("svg[data-smiles]").forEach(svg => {
+    const par = svg.parentElement
     const purpose = svg.getAttribute("Purpose")
     const {x, y, width, height} = svg.viewBox.baseVal
-    let scale = 1.0
-
-    scale = (purpose == "Reaction") ? width / 800 : height / 400
+    const scale = width / ((purpose == "Reaction") ? 800 : 500)
+    const hight = ((purpose == "Reaction") ? 80 : 140) / height
 
     svg.setAttribute("transform-origin","0 0")
-    svg.setAttribute("transform",`scale(${scale}, 1.0)`)
+    svg.setAttribute("transform",`scale(${scale})`)
+    par.style.height = (height * hight) + "px"
+    window.alert("scale: " + scale + "\nhight: " + hight)
   })
 }

@@ -13,10 +13,7 @@ function SmilesInAdmonitions() {
     const purpose = match[0].trim()
     if (purpose != "Smiles") return
 
-    // Create SVG containers
     const smiles = match[1].trim()
-    const svgNS = "http://www.w3.org/2000/svg"
-    const svg = document.createElementNS(svgNS, "svg")
 
     if (smiles.includes(">")) {
       svg.setAttribute("Purpose", "Reaction")
@@ -24,6 +21,8 @@ function SmilesInAdmonitions() {
       svg.setAttribute("Purpose", "Molecule")
     }
 
+    const svgNS = "http://www.w3.org/2000/svg"
+    const svg = document.createElementNS(svgNS, "svg")
     svg.setAttribute("data-smiles", smiles)
     bdy.appendChild(svg)
   })
