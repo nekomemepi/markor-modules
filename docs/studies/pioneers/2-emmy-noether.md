@@ -33,10 +33,9 @@ every continuous symmetry of a physical system corresponds to a
 conserved quantity.  
 
 In KaTeX notation, if the action
-$$S = \int \mathcal{L}(\phi, \partial_\mu \phi)\,d^4x$$
+$S = \int \mathcal{L}(\phi, \partial_\mu \phi)\,d^4x$
 is invariant under a continuous transformation, then the associated current
- $$j^\mu$$ satisfies
-$$\partial_\mu j^\mu = 0.$$  
+$j^\mu$ satisfies $\partial_\mu j^\mu = 0$  
 
 For example, invariance under time-translation implies conservation of
 energy, spatial translations yield momentum conservation, and
@@ -62,11 +61,10 @@ Rings satisfying this are now called Noetherian rings.
 #### Definitions and Examples
 
 - A Noetherian module $M$ over a ring $R$ satisfies that every ascending chain of submodules stabilizes.  
-- In theoretical physics, the electromagnetic Lagrangian  
-$$
- \mathcal{L} = -\frac{1}{4}\,F_{\mu\nu}F^{\mu\nu},
-$$  
-with $F{\mu\nu} = \partial\mu A\nu - \partial\nu A_\mu$, exhibits gauge symmetry leading to charge conservation via Noether’s theorem.
+- In theoretical physics, the electromagnetic Lagrangian
+$\mathcal{L} = -\frac{1}{4}\,F_{\mu\nu}F^{\mu\nu}$ with
+$F{\mu\nu} = \partial\mu A\nu - \partial\nu A_\mu$, exhibits gauge symmetry leading to
+charge conservation via Noether’s theorem.
 
 ---
 
