@@ -1,0 +1,57 @@
+{
+    "data": [
+        {
+            "uid": "f4de1f",
+            "hole": 0.1,
+            "name": "Col2",
+            "pull": 0,
+            "type": "pie",
+            "domain": {
+                "x": [
+                    0,
+                    1
+                ],
+                "y": [
+                    0,
+                    1
+                ]
+            },
+            "marker": {
+                "colors": [
+                    "#7fc97f",
+                    "#beaed4",
+                    "#fdc086",
+                    "#ffff99",
+                    "#386cb0",
+                    "#f0027f"
+                ]
+            },
+            "textinfo": "label+value",
+            "hoverinfo": "all",
+            "labels": [
+                "WordPress",
+                "Other",
+                "Joomia",
+                "Drupal",
+                "Magento",
+                "Blogger"
+            ],
+            "values": [
+                "58.7",
+                "24.1",
+                "6.6",
+                "5.0",
+                "2.9",
+                "2.8"
+            ],
+            "showlegend": false
+        }
+    ],
+    "layout": {
+        "title": "Most Popular Content Management Systems",
+        "width": 800,
+        "height": 500,
+        "autosize": false
+    },
+    "frames": []
+}

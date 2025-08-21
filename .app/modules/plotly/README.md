@@ -1,6 +1,6 @@
 ## Placeholder for integrating plotly into Markor.
 
-# [Plotly JavaScript](https://plotly.com/javascript/)
+# [Plotly JavaScript Home Page](https://plotly.com/javascript/)
 
 # [Plotly JSON chart schema](https://plotly.com/chart-studio-help/json-chart-schema/)
 The Plotly JSON visualization schema is a complete declarative format
